@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="OneHope South Africa - Empowering children with God's Word.">
+    <meta name="keywords" content="OneHope, South Africa, God's Word, children, empowerment, ministry, affect destiny">
+    <meta name="author" content="OneHope South Africa">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="OneHope South Africa | God's Word. Every Child.">
+    <meta property="og:description" content="Empowering children with God's Word.">
+    <meta property="og:image" content="https://yourwebsite.com/assets/logo.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456789-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-123456789-1');
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/onehope-favicon.png" type="image/x-icon">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="signup.css">
+    
+    <!-- FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Chauphilomeneone&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic" media="all">
+    
+    <title>OneHope South Africa | Sign Up Form</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="index.html"><img src="./assets/onehope-logo.png" alt="OneHope South Africa Logo" class="logo"></a>
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <ul id="menu" role="menu">
+                <li role="none"><a role="menuitem" href="./aboutus.html">About Us</a></li>
+                <li role="none"><a role="menuitem" href="./insights.html">Reports</a></li>
+                <li role="none"><a role="menuitem" href="./trainings.html">Trainings</a></li>
+                <li role="none"><a role="menuitem" href="./internship.html">Internship</a></li>
+                <li role="none"><a role="menuitem" href="./contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section class="signup-form">
+            <div class="container">
+                <form id="signup-form">
+                    <h2>Personal Information</h2>
+                    <div class="input-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Contact Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="input-group">
+                        <label for="church">Church or Ministry Name</label>
+                        <input type="text" id="church" name="church">
+                    </div>
+                    <div class="input-group">
+                        <label for="role">Role/Position</label>
+                        <input type="text" id="role" name="role">
+                    </div>
+                    <div class="input-group">
+                        <label for="city">City/Town</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div class="input-group">
+                        <label for="interest">Interested In</label>
+                        <select id="interest" name="interest">
+                            <option value="">Select an option</option>
+                            <option value="Africa Durable Network">I am interested to know more about the Africa Durable Network</option>
+                            <option value="Join Africa Durable Network">I would like to join the Africa Durable Network</option>
+                        </select>
+                    </div>
+                    <button style="margin-bottom: 90px;" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+
+    <footer>
+        <div class="wave">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon-footer">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+        <ul class="menu-footer">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Trainings</a></li>
+            <li><a href="#">Internship</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+        </ul>
+        <p>@2024 OneHope Southern Africa | All Rights Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

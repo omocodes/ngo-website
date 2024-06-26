@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    font-family: "Nunito", Sans-serif;
+}
+
+.about-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #175778;
+    font-size: 30px;
+    margin-bottom: 30px; 
+}
+
+.card {
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 40px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 43px;
+    color: #00a9e0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.37);
+    font-weight: 1000;
+}
+
+.card-content p, .card-content ul {
+    font-size: 16px;
+    color: #175778;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card-content ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.card-content li {
+    margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .about-us {
+        padding: 60px 40px;
+    }
+
+    .card {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .card-img {
+        width: 50%;
+    }
+
+    .card-content {
+        width: 50%;
+        padding: 40px;
+    }
+
+    .card-content h3 {
+        font-size: 53px;
+        text-align: center;
+    }
+
+    .card-content p, .card-content ul {
+        font-size: 15px;
+    }
+}

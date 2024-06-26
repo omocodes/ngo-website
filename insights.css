@@ -1,0 +1,170 @@
+/* Reset and general styles */
+body {
+    font-family: "Nunito", Sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+.section h2 {
+    font-size: 43px;
+    color: #e98300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.section p, .section ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.btn-container {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: static;
+}
+
+.btn-secondary:hover {
+    background-color: #1c6399;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.region-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.region-buttons .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.region-button {
+    display: block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
+
+.region-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.africa {
+    background-color: #ff5733; /* Orange color representing Africa */
+}
+
+.asia-pacific {
+    background-color: #00a86b; /* Green color representing Asia Pacific */
+}
+
+.eurasia {
+    background-color: #8a2be2; /* Purple color representing Eurasia */
+}
+
+.latin-america {
+    background-color: #ffbf00; /* Yellow color representing Latin America */
+}
+
+.lusophone {
+    background-color: #ff4f00; /* Reddish color representing Lusophone */
+}
+
+.north-america {
+    background-color: #4169e1; /* Blue color representing North America */
+}
+
+.southern-asia {
+    background-color: #f4c542; /* Yellowish color representing Southern Asia */
+}
+
+
